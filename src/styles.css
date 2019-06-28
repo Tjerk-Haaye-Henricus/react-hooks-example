@@ -1,0 +1,102 @@
+.App {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.chatbox {
+  border-radius: 15px 15px 0 0;
+  position: fixed;
+  width: 100vw;
+  max-height: 500px;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.chatbox__interactions {
+  border-top: 1px solid #eee;
+  height: 50px;
+  display: flex;
+}
+
+.chatbox .console {
+  display: none;
+}
+
+.chatbox:focus-within .console {
+  display: block;
+}
+
+.chatbox__interactions input {
+  border: 0;
+  flex-grow: 1;
+  outline: 0;
+  padding: 10px 15px;
+}
+
+.chatbox__interactions button {
+  width: 100px;
+  border: 0;
+  outline: 0;
+  font-size: 30px;
+  border-left: 1px dashed #aaa;
+}
+
+.icon-wrapper {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 50px;
+}
+
+.console {
+  border-radius: 15px 15px 0 0;
+  max-height: 450px;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.console__headline {
+  margin: 0;
+  padding: 15px;
+  background-color: #eee;
+}
+
+.console__line {
+  padding: 10px;
+}
+
+.console__line:nth-of-type(even) {
+  background-color: #eee;
+}
+
+.code-box {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 900px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.code-box__headline {
+  font-size: 18px;
+  padding: 10px;
+  margin: 0;
+  background-color: #eee;
+}
+
+.code-box__code {
+  display: block;
+  padding: 15px;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+}
